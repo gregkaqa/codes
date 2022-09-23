@@ -1,5 +1,5 @@
 /*Rounded corners on pretty much everything*/
-:root {--rounding: 10px;}
+:root {--rounding: 12px;}
 progress {
     border-radius: var(--rounding);
   }
