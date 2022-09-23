@@ -116,8 +116,9 @@ progress {
   /*Login background*/
   #loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important;}
 
+/*Accent color*/
 
-
+:root {--accent: 0, 150, 255;}
 
 /*New progress bar*/
 #indexPage .innerCardFooterClear,
