@@ -1,7 +1,7 @@
 /* Sidebar blur added */
 
 .mainDrawer, .drawer-open{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(12px);
 }
 
 /* Get rid of menu options borders */
