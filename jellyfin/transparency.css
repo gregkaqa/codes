@@ -1,0 +1,5 @@
+/* Changes browny boxes to semi-transparent ones */
+
+.emby-input, .emby-select, .emby-textarea, .collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox, .mainDrawer, .drawer-open{
+    background: rgba(0, 0, 0, 0.6);
+}
