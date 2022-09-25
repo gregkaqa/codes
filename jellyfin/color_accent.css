@@ -11,3 +11,19 @@
     color: rgba(var(--accent));
     background-color:rgba(var(--accent), 0.2)
 }
+
+/* Submit login info button color */
+
+.button-submit{
+    background: rgb(var(--accent));
+}
+
+/* Text areas border color */
+
+.emby-input:focus, .emby-textarea:focus{
+    border-color: rgb(var(--accent));
+}
+
+/* Checkboxes color */
+.emby-checkbox:checked + span + .checkboxOutline, .itemProgressBarForeground{
+    background-color: rgb(var(--accent));}
