@@ -1,0 +1,303 @@
+/* color_accent.css */
+/* Progress bar color */
+
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+    background-color: rgba(var(--accent), 0.95) !important;
+}
+
+/* Thumbnails buttons color */
+
+.paper-icon-button-light:hover:not(:disabled){
+    color: rgba(var(--accent));
+    background-color:rgba(var(--accent), 0.2)
+}
+
+/* Submit login info button color */
+
+.button-submit{
+    background: rgb(var(--accent));
+}
+
+/* Text areas border color */
+
+.emby-input:focus, .emby-textarea:focus{
+    border-color: rgb(var(--accent));
+}
+
+/* Checkboxes color */
+.emby-checkbox:checked + span + .checkboxOutline, .itemProgressBarForeground{
+    background-color: rgb(var(--accent));}
+
+/* Played indicator color */
+
+.indicator{background-color: rgb(var(--accent))}
+/* fixes.css */
+/* Sidebar blur added */
+
+.mainDrawer, .drawer-open{
+    backdrop-filter: blur(12px);
+}
+
+/* Get rid of menu options borders */
+
+.listItem-border{
+    border-style: none;
+}
+
+/* Adding hover effect to menu options */
+
+    .listItem:hover{
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.2s;
+}
+
+/* Adding transitions to menu options */
+
+.listItem{
+    transition: 0.2s;
+}
+
+/* Changes color of ribbon on movies/shows pages */
+
+.detailRibbon{
+    background: rgba(0, 0, 0, 0.35);
+    }
+/* homepage_bg.css */
+/* Sidebar blur added */
+
+.mainDrawer, .drawer-open{
+    backdrop-filter: blur(12px);
+}
+
+/* Get rid of menu options borders */
+
+.listItem-border{
+    border-style: none;
+}
+
+/* Adding hover effect to menu options */
+
+    .listItem:hover{
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.2s;
+}
+
+/* Adding transitions to menu options */
+
+.listItem{
+    transition: 0.2s;
+}
+
+/* Changes color of ribbon on movies/shows pages */
+
+.detailRibbon{
+    background: rgba(0, 0, 0, 0.35);
+    }
+/* login_style.css */
+/*Narrow the login form, size according to display size (bigger on mobile)*/
+
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 8em
+}
+
+/*Hide "manual" and "forgot" buttons}*/
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.35);
+    width: 24em;
+    border-radius: var(--rounding);
+}
+#loginPage .squareCard {
+    width: 33%;
+}
+#loginPage form {
+    padding-top: 4em;
+}
+
+#loginPage .sectionTitle{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1.2em !important;
+}
+
+/* Login background image */
+
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
+  background-size: cover !important;
+}
+/* progress_bar.css */
+/*New progress bar*/
+#indexPage .innerCardFooterClear,
+#itemDetailPage .innerCardFooterClear {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground,
+#indexPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    border-radius: var(--rounding);
+}
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+    background-color: rgba(var(--accent), 0.95) !important;
+}
+#indexPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    height: 6px;
+    background: rgba(0,0,0,0.4);
+    margin: .5em .8em;
+}
+/*Accommodate play button on mobile*/
+@media all and (max-width: 100em){
+  #indexPage .itemProgressBar,
+  #itemDetailPage .itemProgressBar {
+    margin-right: 3.2em;
+  }
+}
+@supports (backdrop-filter: blur(15px)) {
+  #indexPage .itemProgressBar,
+  #itemDetailPage .itemProgressBar{
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.35) !important;
+  }
+}
+/* rounding.css */
+progress {
+    border-radius: var(--rounding);
+  }
+  progress::-webkit-progress-bar {
+    border-radius: var(--rounding);
+  }
+  progress::-moz-progress-bar {
+    border-radius: var(--rounding);
+  }
+  progress::-webkit-progress-value {
+    border-radius: var(--rounding);
+  }
+  .taskProgressOuter,
+  .taskProgressInner {
+    border-radius: var(--rounding) !important;
+  }
+  .formDialogHeader {
+    border-top-left-radius: var(--rounding);
+    border-top-right-radius: var(--rounding);
+  }
+  .formDialogFooter {
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding);
+  }
+  .cardOverlayContainer {
+      border-radius: var(--rounding) !important;
+  }
+  .missingIndicator, 
+  .unairedIndicator,
+  .detailTable,
+  .primaryImageWrapper > img,
+  .toast,
+  .paperList,
+  .cardContent,
+  .sessionNowPlayingInnerContent, 
+  .listItem:hover, 
+  .cardImage,
+  .fab,
+  .raised,
+  .multiSelectCheckboxOutline,
+  .itemSelectionPanel,
+  .cardContent-button, 
+  .cardContent-shadow, 
+  .itemDetailImage, 
+  .cardOverlayButton-hover,
+  .cardImageContainer,
+  .cardPadder,
+  .listItemImage,
+  .listItemImageButton,
+  .listItemButton,
+  .headerButton,
+  .paper-icon-button-light,
+  .innerCardFooter,
+  .blurhash-canvas,
+  .dialog,
+  .countIndicator,
+  .playedIndicator,
+  .listItemIcon,
+  .listItem-border,
+  .button-flat,
+  .visualCardBox,
+  .checkboxOutline,
+  .emby-select-withcolor,
+  .chapterThumbTextContainer,
+  .chapterThumbContainer,
+  .chapterThumb,
+  .emby-input, 
+  .emby-textarea, 
+  .emby-select-withcolor,
+  .nowPlayingPageImage,
+  .upNextDialog-poster-img,
+  .upNextContainer,
+  .cardOverlayButtonIcon {
+    border-radius: var(--rounding) !important;
+  }
+  .actionSheetMenuItem:hover {
+      border-radius: 0 !important;
+  }
+  fieldset {
+      border-radius: var(--rounding);
+  }
+  .osdPoster img {
+    border-radius: var(--rounding); border: none;
+  }
+  .mdl-slider::-moz-range-thumb {
+    border-radius: var(--rounding);
+  }
+  .mdl-slider::-ms-thumb {
+    border-radius: var(--rounding);
+  }
+  .mdl-slider::-webkit-slider-thumb {
+    border-radius: var(--rounding);
+  }
+  
+  div[data-role="controlgroup"] a[data-role="button"]:first-child {
+      border-bottom-left-radius: var(--rounding);
+      border-top-left-radius: var(--rounding);
+  }
+  div[data-role="controlgroup"] a[data-role="button"]:last-child {
+      border-bottom-right-radius: var(--rounding);
+      border-top-right-radius: var(--rounding);
+  }
+  #dashboardPage .cardContent, #dashboardPage .sessionNowPlayingInnerContent {
+      border-radius: var(--rounding) var(--rounding) 0 0 !important;
+  }
+  #divVirtualFolders .cardImageContainer, #divVirtualFolders .cardContent {
+      border-radius: var(--rounding) var(--rounding) 0 0 !important;
+  }
+  #userProfilesPage .cardImage, #userProfilesPage .cardContent {
+      border-radius: var(--rounding) var(--rounding) 0 0 !important;
+  }
+/* top_bar.css */
+/* Transparent top bar*/
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background:none; background-color:rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+    background:none; background-color:rgba(0, 0, 0, 0);
+}
+/* transparency.css */
+/* Changes browny boxes to semi-transparent ones */
+
+.emby-input, .emby-select, .emby-textarea, .collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox, .mainDrawer, .drawer-open{
+    background: rgba(0, 0, 0, 0.6);
+}
