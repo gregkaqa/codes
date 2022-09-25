@@ -1,0 +1,13 @@
+/* Progress bar color */
+
+#indexPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+    background-color: rgba(var(--accent), 0.95) !important;
+}
+
+/* Thumbnails buttons color */
+
+.paper-icon-button-light:hover:not(:disabled){
+    color: rgba(var(--accent));
+    background-color:rgba(var(--accent), 0.2)
+}
