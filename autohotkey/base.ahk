@@ -5,5 +5,5 @@
 
 #Enter::
 {
-	Run "cmd"
+	Run "powershell"
 }
