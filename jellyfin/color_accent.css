@@ -27,3 +27,7 @@
 /* Checkboxes color */
 .emby-checkbox:checked + span + .checkboxOutline, .itemProgressBarForeground{
     background-color: rgb(var(--accent));}
+
+/* Played indicator color */
+
+.indicator{background-color: rgb(var(--accent))}
