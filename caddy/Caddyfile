@@ -1,0 +1,18 @@
+daitan.duckdns.org {
+
+root * C:/Users/Lilian/Documents/Sith/
+file_server
+
+}
+
+jf.daitan.duckdns.org {
+
+reverse_proxy :1902
+
+}
+
+qb.daitan.duckdns.org {
+
+reverse_proxy :4062
+
+}
