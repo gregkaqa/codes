@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --light-color: #eceff4;
+
+}
+
+html{
+    background-color: #2e3440;
+    width: 100%;
+}
+
+a{
+    color: var(--light-color);
+}
+
+img#reload-page{
+    width: 40px;
+}
+
+a#reload-page{
+    transition: 0.2s;
+    padding: 6px;
+    float: left;
+    border-radius: 6px;
+}
+
+a#reload-page:hover{
+    transition: 0.2s;
+    background-color: #4c566a;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+
+div#welcome{
+    margin: auto;
+    margin-top: 1%;
+    width: 97%;
+    margin-bottom: 3%;
+}
+
+div#welcome h1{
+    text-align: center;
+    color: var(--light-color);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1.title{
+    
+}
+
+div#content{
+    background-color: #3b4252;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 8px;
+}
+
+div#left, div#center, div#right{
+    transition: 0.2s;
+    margin: 18px;
+    padding: 12px;
+    justify-content: space-around;
+    max-width: min-content;
+    background-color: #434c5e;
+    display: inline-block;
+    border-radius: 18%;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+}
+
+div#left:hover, div#center:hover, div#right:hover{
+    transition: 0.2s;
+    background-color: #4c566a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img.icon{
+    max-width: 112px;
+    border-radius: 8px;
+}
+
+p.name{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
