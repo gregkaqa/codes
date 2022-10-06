@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -14,6 +15,8 @@ html{
 }
 
 a{
+    transition: 0.2s;
+    text-decoration: none;
     color: var(--light-color);
 }
 
@@ -44,11 +47,7 @@ div#welcome{
 div#welcome h1{
     text-align: center;
     color: var(--light-color);
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h1.title{
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 div#content{
@@ -56,13 +55,23 @@ div#content{
     margin: auto;
     width: 65%;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 8px;
 }
 
+div#title1{
+    padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--light-color);
+}
 
+div#main1{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 85%;
+}
 
 div#left, div#center, div#right{
     transition: 0.2s;
@@ -83,9 +92,18 @@ div#left:hover, div#center:hover, div#right:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+div.case:hover a.link{
+    text-decoration: underline rgba(236, 239, 244, 1);
+}
+
 img.icon{
     max-width: 112px;
     border-radius: 8px;
+}
+
+a.link{
+    transition: 0.15s;
+    text-decoration: underline rgba(236, 239, 244, 0)
 }
 
 p.name{
