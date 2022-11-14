@@ -1,0 +1,52 @@
+#JELLYFIN
+version: '3'
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    ports:
+      - 8096:8096
+    environment:
+      - UID=1000
+      - GID=1000
+    volumes:
+      - /home/Documents/Docker/jellyfin/config:/config
+      - /home/Documents/Docker/jellyfin/cache:/cache
+      - /mnt:/media
+    restart: always
+#Dashy
+  dashy:
+    image: lissy93/dashy
+    container_name: dashy
+    volumes:
+      - /home/viste/Documents/Docker/dashy/conf.yml:/app/public/conf.yml
+    ports:
+      - 1111:80
+    environment:
+      - UID=1000
+      - GID=1000
+      - NODE_ENV=production
+      - NODE_OPTIONS=--max-old-space-size=2048
+    restart: always
+#Scrutiny
+  scrutiny:
+    container_name: scrutiny
+    image: ghcr.io/analogj/scrutiny:master-omnibus
+    cap_add:
+      - SYS_RAWIO
+    ports:
+      - "7070:8080" # webapp
+      - "7086:8086" # influxDB admin
+    volumes:
+      - /run/udev:/run/udev:ro
+      - /home/viste/Documents/Docker/scrutiny/config:/opt/scrutiny/config
+      - /home/viste/Documents/Docker/scrutiny/influxdb:/opt/scrutiny/influxdb
+    devices:
+      - "/dev/sda"
+      - "/dev/sdc"
+      - "/dev/sdd"
+      - "/dev/sde"
+    environment:
+      - UID=1000
+      - GID=1000
+    restart: always
