@@ -13,3 +13,6 @@ x = re.findall('[1]', binary_name)
 print(x)
 
 print(len(x))
+
+x = len(x)*100
+print(x)
